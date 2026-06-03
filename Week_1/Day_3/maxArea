@@ -1,21 +1,14 @@
 class Solution {
     public int maxArea(int[] height) {
-
         int start = 0;
         int end = height.length - 1;
-
-        int answer = 0;
-
+        int ans = 0;
         while (start < end) {
-
-            int distance = end - start;
-
-            int waterStored = distance * Math.min(height[start], height[end]);
-
-            if (waterStored > answer) {
-                answer = waterStored;
+            int dis = end - start;
+            int waterStored = dis* Math.min(height[start], height[end]);
+            if (waterStored > ans) {
+                ans = waterStored;
             }
-
             if (height[start] <= height[end]) {
                 start++;
             } else {
@@ -23,6 +16,6 @@ class Solution {
             }
         }
 
-        return answer;
+        return ans;
     }
 }
