@@ -1,0 +1,4 @@
+public interface LibraryUser {
+    void register_Account();
+    void request_Book();
+}
