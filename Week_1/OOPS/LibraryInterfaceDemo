@@ -1,0 +1,44 @@
+public class LibraryInterfaceDemo {
+    static void main() {
+        System.out.println("**Test Case 1 for KidUser **\n");
+        //a .....
+        KidUsers kid1 = new KidUsers();
+        kid1.age = 10;
+        kid1.register_Account();
+
+        kid1.booktype = "Kids";
+        kid1.request_Book();
+
+        System.out.println();
+
+        // b....
+        KidUsers kid2 = new KidUsers();
+        kid2.age = 18;
+        kid2.register_Account();
+
+        kid2.booktype = "Fiction";
+        kid2.request_Book();
+
+        System.out.println();
+
+
+
+//test case 2
+        System.out.println("**Testcase 2 for AdultUsers **\n");
+AdultUser adult1 = new AdultUser();
+   adult1.age = 5;
+   adult1.register_Account();
+
+   adult1.booktype = "Kids";
+   adult1.request_Book();
+
+        System.out.println();
+
+  AdultUser adult2 = new AdultUser();
+   adult2.age = 23;
+   adult2.register_Account();
+
+   adult2.booktype = "Fiction";
+   adult2.request_Book();
+    }
+}
